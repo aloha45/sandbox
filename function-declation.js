@@ -1,0 +1,3 @@
+function planetHasWater(planet) {
+    planet
+}
