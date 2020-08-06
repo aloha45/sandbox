@@ -1,0 +1,56 @@
+:root {
+--taylor: 'Dancing Script', cursive;
+--kanye: 'Inconsolata', monospace;
+}
+
+body {
+    background-color: cornflowerblue;
+    text-align: center; 
+    --header-font-color: grey;
+    --light-dark-btn-content: "Dark Mode";
+}
+
+body.dark {
+    background-color: darkblue;
+    --header-font-color: black;
+    --light-dark-btn-content: "Light Mode";
+}
+
+h1 {
+    color: var(--header-font-color)
+}
+
+#darkModeBtn::after{
+    content: var(--light-dark-btn-content);
+}
+
+#photo {
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    float: none;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    width: 100%;
+}
+
+.card {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#yeezy {
+    background-color: goldenrod;
+    font-family: var(--kanye);
+}
+
+#t-swizzle {
+    background-color: seashell;
+    font-family: var(--taylor);
+}
